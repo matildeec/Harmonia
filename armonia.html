@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Armonia Funzionale | Harmonia</title>
+    <link rel="icon" type="image/png" href="sources/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <script src="script/navbar.js"></script>
+    <script src="script/loadNavbar.js"></script>
+  </head>
+  <body id="body">
+    <!--TOP BAR-->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="sources/icons/logo.png" class="logo" alt="Logo Harmonia"></a>
+      </div>
+      <nav id="navigazione" class="navigazione">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a id="teoriaMenu" href="#">Teoria &dtrif;</a>
+            <ul id="listaTeoria" class="listaTeoria">
+              <li><a href="armonia.html">Armonia Funzionale</a></li>
+              <li><a href="progressioni.html">Progressioni Armoniche</a></li>
+            </ul>
+          </li>
+          <li><a href="generatore.html">Generatore</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+      <div class="dropdownBox">
+        <a id="generalMenu" href="#"><img src="sources/icons/dropdown.svg" id="dropdown" class="dropdown" alt="Menu dropdown"></a>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main_armonia">
+      <span id="top" class="spanArmonia"></span>
+      <div class="sidebar_armonia">
+        <ul>
+          <li><div class="riempimento viola"><a href="#armonia_funzionale">Che cosa si intende per armonia funzionale?</a></div></li>
+          <li><div class="riempimento blu"><a href="#centro_tonale">Definire il centro tonale: l’armonizzazione della scala maggiore e minore</a></div></li>
+          <li><div class="riempimento arancione"><a href="#funzioni_accordi">Quali sono le funzioni degli accordi?</a></div></li>
+          <li><div class="riempimento verde"><a href="#progressioni_armoniche">Cosa sono le progressioni armoniche?</a></div></li>
+        </ul>
+      </div>
+
+      <a href="#top" class="scrollup"><img src="sources/icons/scrollup.svg" alt="Scroll up"></a>
+
+      <div class="main_articoli">
+        <span id="armonia_funzionale" class="spanArmonia"></span>
+        <article class="articolo_armonia">
+          <h2>Che cosa si intende per armonia funzionale?</h2>
+          <p class="definizione">L’<em>armonia funzionale</em> è lo studio delle <em>relazioni</em> che si instaurano fra accordi in successione. Gli accordi assumono <em>funzioni</em> diverse in base al <em>contesto armonico</em> in cui si trovano, ossia, in base al <em>centro tonale</em> della sequenza armonica in cui sono inseriti.</p>
+          <p>In pratica: se suonassimo un G maggiore isolato, non potremmo definirne la <em>funzione armonica</em>. Per farlo dovremmo prima inserirlo in un <em>contesto armonico</em>, scegliendo di suonare successivamente un C maggiore e poi ancora un A minore, ad esempio.</p>
+          <div class="illustrazioni">
+            <img src="sources/img/G_isolato.png" alt="G isolato è senza funzione, ma G seguito da C e Am ha funzione">
+          </div>
+          <p>Con un solo passaggio facciamo due cose:</p>
+          <ol>
+            <li>Dotiamo G di una funzione armonica perché lo abbiamo inserito in un <em>contesto armonico</em></li>
+            <li>Diamo vita a una sequenza armonica gradevole all’orecchio perché scegliamo degli accordi (G, C e Am) che <em>“suonano bene insieme”</em></li>
+          </ol>
+          <p>È così che si definisce - perfino inconsapevolmente - il <em>centro tonale</em> di un brano in base al quale gli accordi assumono <em>funzioni</em> specifiche che suscitano una particolare <em>sensazione</em> nell’ascoltatore. È proprio grazie alle regole dell’armonia funzionale che possiamo spiegare perché alcuni accordi “suonano bene” (o male) insieme!</p>
+          <p>Quindi, se cambia il contesto in cui si trova l’accordo cambia anche la funzione che questo assume. O ancora, un accordo può assumere tante funzioni quanti sono i contesti in cui può trovarsi.</p>
+        </article>
+
+        <span id="centro_tonale" class="spanArmonia"></span>
+        <article class="articolo_armonia">
+          <h2>Definire il centro tonale: l’armonizzazione della scala maggiore e minore</h2>
+          <p>Spesso, quando si vuole comporre un brano da zero, si tende a suonare tutti gli accordi che si conosce finché non se ne trovano alcuni che suonino bene fra loro. Solo a quel punto, quando si riesce a trovare quei fatidici 4 accordi, ci si può ritenere più o meno soddisfatti del risultato.</p>
+          <p>Per quello che abbiamo detto prima, questo può sicuramente essere un modo di definire una <em>sequenza armonica efficace</em> e, dunque, anche se inconsapevolmente, un <em>centro tonale</em>.</p>
+          <p>Ci si potrebbe fermare qui.</p>
+          <p>Ma se ti dicessi che è possibile trovare quei 4 accordi in un modo molto più conveniente? Che è possibile conoscere in anticipo gli accordi che funzioneranno sicuramente bene insieme?</p>
+          <p>Tutto ciò è possibile grazie all’<em>armonizzazione delle scale diatoniche maggiori e minori</em>.</p>
+          <p class="definizione">Le scale diatoniche sono scale di 7 suoni che si susseguono secondo una precisa successione di 7 intervalli, cinque toni (T) e due semitoni (s).</p>
+          <p>Nelle <em>scale diatoniche maggiori</em> la successione è la seguente:</p>
+          <div class="illustrazioni">
+              <img src="sources/img/maggiori.png" alt="Intervalli nella scala diatonica maggiore">
+          </div>
+          <p>Nelle <em>scale diatoniche minori</em> la successione è la seguente:</p>
+          <div class="illustrazioni">
+              <img src="sources/img/minori.png" alt="Intervalli nella scala diatonica minore">
+          </div>
+          <p>A ogni nota della scala viene assegnato un <em>grado</em> denotato da <em>numeri romani</em>.</p>
+          <p>Applichiamo gli intervalli per ottenere i gradi della scala maggiore di C:</p>
+          <div class="illustrazioni">
+              <img src="sources/img/intervalli_maggiori.png" alt="Scala diatonica maggiore di C">
+          </div>
+          <p>e quelli della scala minore di C:</p>
+          <div class="illustrazioni">
+              <img src="sources/img/intervalli_minori.png" alt="Scala diatonica minore di C">
+          </div>
+          <p>A questo punto, suonando <em>simultaneamente</em> almeno 3 note di una di queste due scale, otterremo degli <em>accordi a loro volta maggiori o minori, indipendentemente dalla scala di riferimento</em>. È suonando gli accordi in questo modo che possiamo armonizzare una scala.</p>
+          <p class="definizione">Armonizzare una <em>scala</em> significa, dunque, <em>costruire un accordo di almeno 3 note (cioè una triade) su ogni grado della scala utilizzando solo le note che fanno parte di quella scala.</em></p>
+          <p>La successioni di accordi (maggiori e minori) che verrà fuori sarà la stessa per ogni tonalità. Per questo è possibile individuare due pattern:</p>
+            <ol>
+              <li><em>ARMONIZZAZIONE SCALA MAGGIORE</em>: I ii iii IV V vi viiº</li>
+              <li><em>ARMONIZZAZIONE SCALA MINORE</em>: i iiº III iv v VI VII</li>
+            </ol>
+          <p>A ogni grado delle scale possiamo associare un accordo maggiore (indicati da numeri romani in maiuscolo) o un accordo minore (indicati da numeri romani in minuscolo) e una funzione precisa.</p>
+          <p>Armonizziamo la <em>scala diatonica maggiore di C</em>:</p>
+          <div class="illustrazioni">
+            <img src="sources/img/armonizzazione_maggiore.png" alt="Armonizzazione della scala diatonica maggiore di C">
+          </div>
+          <p>E poi la <em>scala diatonica minore di C</em>:</p>
+          <div class="illustrazioni">
+            <img src="sources/img/armonizzazione_minore.png" alt="Armonizzazione della scala diatonica minore di C">
+          </div>
+        </article>
+
+        <span id="funzioni_accordi" class="spanArmonia"></span>
+        <article class="articolo_armonia">
+          <h2>Quali sono le funzioni degli accordi?</h2>
+          <p>Le tre principali funzioni degli accordi sono:</p>
+            <ol>
+              <li>La funzione di <em>tonica</em></li>
+              <li>La funzione di <em>sottodominante</em></li>
+              <li>La funzione di <em>dominante</em></li>
+            </ol>
+          <p>A queste funzioni corrispondono tre sensazioni.</p>
+
+          <div class="funzioni">
+            <div class="tonica">
+              <h3>Tonica</h3>
+              <p><em>L’accordo di tonica evoca una sensazione di stabilità. È il punto da cui partire e a cui tornare.</em></p>
+              <p>Gli accordi che appartengono alla famiglia della tonica sono:</p>
+                <ol>
+                  <li>I</li>
+                  <li>III</li>
+                  <li>VI</li>
+                </ol>
+            </div>
+            <div class="sottodominante">
+              <h3>Sottodominante</h3>
+              <p><em>L’accordo di sottodominante suscita una sensazione di movimento e ha la duplice funzione di allontanarsi dall’accordo di tonica e di predisporre l’orecchio all’accordo di dominante.</em></p>
+              <p>Gli accordi che appartengono alla famiglia della sottodominante sono:</p>
+                <ol>
+                  <li>II</li>
+                  <li>IV</li>
+                </ol>
+            </div>
+            <div class="dominante">
+              <h3>Dominante</h3>
+              <p><em>L’accordo di dominante evoca grande tensione che provoca nell’ascoltatore il desiderio di risoluzione sulla tonica.</em></p>
+              <p>Gli accordi che appartengono alla famiglia della dominante sono:</p>
+                <ol>
+                  <li>V</li>
+                  <li>VII</li>
+                </ol>
+            </div>
+          </div>
+
+          <p>Ogni ascoltare, seppur inconsapevolmente, percepisce le sensazioni legate alle funzioni armoniche impiegate in un brano e basa il proprio interesse per il brano stesso sulla soddisfazione (o delusione, a seconda dei casi) dell’aspettativa armonica complessiva.</p>
+          <div class="illustrazioni">
+            <img src="sources/img/funzioni.png" alt="Funzioni di tonica, sottodominante e dominante">
+          </div>
+        </article>
+
+        <span id="progressioni_armoniche" class="spanArmonia"></span>
+        <article class="articolo_armonia">
+          <h2>Cosa sono le progressioni armoniche?</h2>
+          <p class="definizione">Le <em>progressioni armoniche</em> sono sequenze di <em>funzioni armoniche</em> (ovvero di accordi la cui funzione armonica è ben individuata).</p>
+          <p>Esistono tantissimi tipi di progressioni armoniche, ma noi ci limiteremo ad approfondire quelle <em>tonali</em> (che rimangono all’interno di una sola tonalità) e <em>diatoniche</em> (in cui gli accordi appartengono alla scala diatonica di riferimento).</p>
+          <p>Generalmente, nelle progressioni armoniche si tende a partire dall’accordo di tonica e a muoversi verso un accordo di sottodominante, poi di dominante per chiudere infine nuovamente con la tonica. È questa la struttura della progressione più famosa di tutte:</p>
+          <div class="illustrazioni">
+            <img src="sources/img/progressione_maggiore.png" alt="Progressione I vi IV V">
+          </div>
+          <p class="last_p">Qui potrai riconoscere le progressioni armoniche più frequenti in famosi brani pop.<br />
+            Ricorda sempre che le possibilità sono infinite e, sebbene possano essere utili, le regole teoriche non devono mai limitare la creatività di un musicista.</p>
+            <a class="vai_progressioni" href="progressioni.html">Scopri le progressioni</a>
+        </article>
+      </div>
+    </main>
+
+    <!-- FOOTER MOBILE FIRST -->
+    <footer>
+      <p>Progetto di Progettazione e Programmazione Web a.a. 2021-22 <br /> CdL in <a rel=link href="https://infouma.fileli.unipi.it/">Informatica Umanistica - Università di Pisa</a><br />
+      Realizzato da <a rel="author" href="info.html">Matilde Contestabile</a></p>
+      <div class="social">
+          <a href="mailto:cmatilde01@gmail.com"><img src="sources/icons/email.svg" alt="Icona Email"></a>
+          <a href="https://www.linkedin.com/in/matildecontestabile"><img class="linkedin" src="sources/icons/linkedin.svg" alt="Icona Linkedin"></a>
+          <a href="https://www.instagram.com/matildeec.music/"><img src="sources/icons/instagram.svg" alt="Icona Instagram"></a>
+      </div>
+      <p>Per maggiori informazioni visita <a href="info.html">Info</a></p>
+    </footer>
+  </body>
+</html>

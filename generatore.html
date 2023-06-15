@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Generatore | Harmonia</title>
+    <link rel="icon" type="image/png" href="sources/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <script src="script/navbar.js"></script>
+    <script src="script/generatore.js"></script>
+    <script src="script/loadGeneratore.js"></script>
+  </head>
+  <body id="body">
+    <!--TOP BAR-->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="sources/icons/logo.png" class="logo" alt="Logo Harmonia"></a>
+      </div>
+      <nav id="navigazione" class="navigazione">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a id="teoriaMenu" href="#">Teoria &dtrif;</a>
+            <ul id="listaTeoria" class="listaTeoria">
+              <li><a href="armonia.html">Armonia Funzionale</a></li>
+              <li><a href="progressioni.html">Progressioni Armoniche</a></li>
+            </ul>
+          </li>
+          <li><a href="generatore.html">Generatore</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+      <div class="dropdownBox">
+        <a id="generalMenu" href="#"><img src="sources/icons/dropdown.svg" id="dropdown" class="dropdown" alt="Menu dropdown"></a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="generatore">
+      <section class="generatore">
+        <h1>Generatore di progressioni armoniche</h1>
+
+        <div class="bottoni">
+          <ul>
+            <li>
+              <label for="tonalita">Tonalità</label>
+              <select id="tonalita" name="tonalita"></select>
+            </li>
+            <li>
+              <label for="scala">Scala</label>
+              <select id="scala" name="scala"></select>
+            </li>
+            <li>
+              <label for="progressione">Progressione</label>
+              <select id="progressione" name="progressione"></select>
+            </li>
+          </ul>
+
+          <input type="button" id="randomizza" value="&#8618; Randomizza" />
+          <br />
+          <input type="button" id="genera" value="&#8921; Genera" />
+        </div>
+
+        <div class="risultato">
+          <input type="text" class="misura" readonly="readonly" />
+          <input type="text" class="misura" readonly="readonly" />
+          <input type="text" class="misura" readonly="readonly" />
+          <input type="text" class="misura" readonly="readonly" />
+        </div>
+        <input type="button" id="play" class="visible" value="&#9654; Play loop" />
+        <input type="button" id="stop" class="" value="&#9724; Stop loop" />
+        <div id="messageBox" class="messageBox">
+          <img src="sources/icons/close.svg" id="close" class="close" alt="chiudi">
+        </div>
+      </section>
+
+      <article class="istruzioni">
+        <h2>Istruzioni</h2>
+        <ol>
+          <li>Seleziona manualmente le opzioni che desideri oppure <em>randomizzale</em>!</li>
+          <li>Genera la progressione e <em>clicca sugli accordi</em> per sentirne il suono oppure <em>avvia il loop</em>!</li>
+          <li>Buon divertimento!</li>
+        </ol>
+        <h2>Scopri perché funziona</h2>
+        <p>Confuso? Niente panico! Ricorda che sei sempre in tempo per approfondire la teoria che sta alla base del funzionamento del generatore!</p>
+        <div class="centrato">
+          <a class="vai_teoria" href="armonia.html">Vai alla teoria</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- FOOTER MOBILE FIRST -->
+    <footer>
+      <p>Progetto di Progettazione e Programmazione Web a.a. 2021-22 <br /> CdL in <a rel=link href="https://infouma.fileli.unipi.it/">Informatica Umanistica - Università di Pisa</a><br />
+      Realizzato da <a rel="author" href="info.html">Matilde Contestabile</a></p>
+      <div class="social">
+          <a href="mailto:cmatilde01@gmail.com"><img src="sources/icons/email.svg" alt="Icona Email"></a>
+          <a href="https://www.linkedin.com/in/matildecontestabile"><img class="linkedin" src="sources/icons/linkedin.svg" alt="Icona Linkedin"></a>
+          <a href="https://www.instagram.com/matildeec.music/"><img src="sources/icons/instagram.svg" alt="Icona Instagram"></a>
+      </div>
+      <p>Per maggiori informazioni visita <a href="info.html">Info</a></p>
+    </footer>
+  </body>
+</html>

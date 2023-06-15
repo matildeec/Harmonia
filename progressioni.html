@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Progressioni | Harmonia</title>
+    <link rel="icon" type="image/png" href="sources/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <script src="script/navbar.js"></script>
+    <script src="script/progressioni.js"></script>
+    <script src="script/loadProgressioni.js"></script>
+  </head>
+  <body id="body">
+    <!--TOP BAR-->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="sources/icons/logo.png" class="logo" alt="Logo Harmonia"></a>
+      </div>
+      <nav id="navigazione" class="navigazione">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a id="teoriaMenu" href="#">Teoria &dtrif;</a>
+            <ul id="listaTeoria" class="listaTeoria">
+              <li><a href="armonia.html">Armonia Funzionale</a></li>
+              <li><a href="progressioni.html">Progressioni Armoniche</a></li>
+            </ul>
+          </li>
+          <li><a href="generatore.html">Generatore</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+      <div class="dropdownBox">
+        <a id="generalMenu" href="#"><img src="sources/icons/dropdown.svg" id="dropdown" class="dropdown" alt="Menu dropdown"></a>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <article class="progressioni">
+        <h1>Scopri quali sono le progressioni più diffuse</h1>
+        <img src="sources/icons/info.svg" id="info" alt="Istruzioni">
+        <div id="messaggioInfo" class="messaggioInfo">
+          <ol>
+            <li>Clicca sulle progressioni per scoprire in quali brani Pop compaiono</li>
+            <li>Clicca sui brani per visualizzarne gli accordi</li>
+          </ol>
+        </div>
+
+        <div class="progressioni_griglia" lang="en">
+          <div class="maggiori">
+            <h2>Progressioni maggiori</h2>
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>I vi IV V</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Stand By Me" - Ben E. King</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: A</p>
+                  <p>
+                    [Verse 1]<br/>
+                    When the ni<span class="chord">A</span>ght has come<br/>
+                    <span class="chord">F&sharp;m</span>And the land is dark<br/>
+                    And the mo<span class="chord">D</span>on is the on<span class="chord">E</span>ly light we'll see<span class="chord">A</span><br/>
+                    [...]<br/>
+                    [Chorus]<br/>
+                    So, darling, darling, st<span class="chord">A</span>and by me.<br/>
+                    Oh, s<span class="chord">F&sharp;m</span>tand by my.<br/>
+                    Oh, s<span class="chord">D</span>tand, <span class="chord">E</span>stand by me. <span class="chord">A</span>Stand by me.
+                  </p>
+                </div>
+                <div class="list_item">"Octopus's Garden" - The Beatles</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: E</p>
+                  <p>
+                    [Verse 1]<br/>
+                    <span class="chord">E</span>I'd like to be <span class="chord">C&sharp;m</span>under the sea<br/>
+                    In an <span class="chord">A</span>Octopus's Garden in the sha<span class="chord">B</span>de.<br/>
+                    <span class="chord">E</span>He'd let us in, <span class="chord">C&sharp;m</span>knows where we've been,<br/>
+                    In his <span class="chord">A</span>Octoups's Garden in the sha<span class="chord">B</span>de.<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"I Will Always Love You" - Dolly Parton</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: A</p>
+                  <p>
+                    [Verse 1]<br/>
+                    If <span class="chord">A</span>I, should <span class="chord">A</span>stay<br/>
+                    I would on<span class="chord">F&sharp;m</span>ly be in your wa<span class="chord">D</span>y<span class="chord">E</span><br/>
+                    So I go<span class="chord">A</span>, but I <span class="chord">A</span>know<br/>
+                    I'll thi<span class="chord">F&sharp;m</span>nk of you, every step of the wa<span class="chord">D</span>y<span class="chord">E</span><br/>
+                    [Chorus]<br/>
+                    And <span class="chord">A</span>I --<span class="chord">F&sharp;m</span>will a<span class="chord">D</span>lways<span class="chord">E</span>- love you<span class="chord">A</span><br/>
+                    <span class="chord">F&sharp;</span>Will a<span class="chord">D</span>lways<span class="chord">E</span> love you<span class="chord">A</span><br/>
+                  </p>
+                </div>
+                <div class="list_item">"Every Breath You Take" - The Police</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: A&flat;</p>
+                  <p>
+                    [Verse 1]<br/>
+                    Every breath you ta<span class="chord">A&flat;</span>ke<br/>
+                    And every move you ma<span class="chord">Fm</span>ke<br/>
+                    Every bond you bre<span class="chord">D&flat;</span>ak, every step you ta<span class="chord">E&flat;</span>ke<br/>
+                    I'll be wathing you<span class="chord">Fm</span><br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Unchained Melody" - The Righteous Brothers</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: C</p>
+                  <p>
+                    [Verse 1]<br/>
+                    O<span class="chord">C</span>h, my <span class="chord">Am</span>love, my da<span class="chord">F</span>rling,<br/>
+                    I've hu<span class="chord">G</span>ngered for your to<span class="chord">C</span>uch<br/>
+                    A<span class="chord">Am</span> long, lonely ti<span class="chord">G</span>me<br/>
+                    [...]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>I V vi IV</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Don't Stop Believing" - Journey</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: E</p>
+                  <p>
+                    [Verse 1]<br/>
+                    <span class="chord">E</span>Just a s<span class="chord">B</span>mall town girl, <span class="chord">C&sharp;</span>living in a lo<span class="chord">A</span>nely world<br/>
+                    <span class="chord">E</span>She took the mi<span class="chord">B</span>dnight train going <span class="chord">G&sharp;</span>anywhe<span class="chord">A</span>re<br/>
+                    [...]
+                </p>
+                </div>
+                <div class="list_item">"You Are Beautiful" - James Blunt</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: E&flat;</p>
+                  <p>
+                    [Verse 1]<br/>
+                    <span class="chord">E&flat;</span>My life is brilliant<br/>
+                    <span class="chord">B&flat;</span>My love is pure<br/>
+                    <span class="chord">Cm</span>I saw an angel<br/>
+                    <span class="chord">A&flat;</span>Of that I'm sure<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"With Or Without You" - U2</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: D</p>
+                  <p>
+                    [Verse 1]<br/>
+                    <span class="chord">D</span>See the sto<span class="chord">A</span>ne set in your ey<span class="chord">Bm</span>es<br/>
+                    See the tho<span class="chord">G</span>rn twist in your si<span class="chord">D</span>de<br/>
+                    I wa<span class="chord">A</span>it for <span class="chord">Bm</span>you <span class="chord">G</span><br/>
+                    [...]<br/>
+                    [Chorus]<br/>
+                    With or with<span class="chord">D</span>out you <span class="chord">A</span><br/>
+                    With or with<span class="chord">Bm</span>out you <span class="chord">G</span><br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"No Woman No Cry" - Bob Marley</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: C</p>
+                  <p>
+                    [Chorus]<br/>
+                    <span class="chord">C</span>No wo<span class="chord">G</span>man no <span class="chord">Am</span>cry <span class="chord">F</span><br/>
+                    [Verse]<br/>
+                    <span class="chord">C</span>Said I re<span class="chord">G</span>member wh<span class="chord">Am</span>en we used to sit<span class="chord">F</span><br/>
+                    <span class="chord">C</span>In the govern<span class="chord">G</span>ment yard in the tr<span class="chord">Am</span>enchtown<span class="chord">F</span><br/>
+                    [...]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>I iii IV V</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Have I Told You Lately" - Rod Stewart</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: B&flat;</p>
+                  <p>
+                    [Verse]<br/>
+                    Have I to<span class="chord">B&flat;</span>ld you la<span class="chord">Dm</span>tely that I<span class="chord">E&flat;</span> love you?<span class="chord">F</span><br/>
+                    Have I to<span class="chord">B&flat;</span>ld you the<span class="chord">Dm</span>re's no one else <span class="chord">E&flat;</span>above you?<span class="chord">F</span><br/>
+                    <span class="chord">E&flat;</span>Fill my heart with gladness, t<span class="chord">Dm</span>ake away all my sadness,<br/>
+                    <span class="chord">Cm</span>ease my tr<span class="chord">F</span>oubles that's what you do<span class="chord">B&flat;</span>.<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"I Feel Fine" - The Beatles</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: G</p>
+                  <p>
+                    [Chorus]<br/>
+                    <span class="chord">G</span>I'm so gla<span class="chord">Bm</span>d that she<span class="chord">C</span>'s my little gi<span class="chord">D</span>rl<br/>
+                    <span class="chord">G</span>She's so gla<span class="chord">Bm</span>d she's te<span class="chord">C</span>lling all the wo<span class="chord">D</span>rld
+                  </p>
+                </div>
+                <div class="list_item">"Crocodile Rock" - Elton John</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: G</p>
+                  <p>
+                    [Verse]<br/>
+                    I rem<span class="chord">G</span>ember when rock was young,<br/>
+                    me and S<span class="chord">Bm</span>usie had so much fun<br/>
+                    Holding h<span class="chord">C</span>ands and skimmin' stones<br/>
+                    had a o<span class="chord">D</span>ld gold Chevy & a place of my own<br/>
+                    But the bi<span class="chord">G</span>ggest kick I ever got<br/>
+                    was doin' a th<span class="chord">Bm</span>ing called the Crocodile Rock<br/>
+                    While the <span class="chord">C</span>other kids were rockin'<br/>
+                    round the clock we were ho<span class="chord">D</span>ppin' and boppin' to the Crocodile Rock<br/>
+                  </p>
+                </div>
+                <div class="list_item">"Ziggie Stardust" - David Bowie</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: G</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">G</span>Now Ziggy played guitar,<br/>
+                    <span class="chord">Bm</span>Jamming good with Weird and G<span class="chord">C</span>illy,<br/>
+                    And the Spi<span class="chord">B</span>ders fro<span class="chord">C</span>m Ma<span class="chord">D</span>rs.<br/>
+                    He played it left hand,<span class="chord">G</span><br/>
+                    But made it too far.<span class="chord">Em</span><br/>
+                    Became the speci<span class="chord">A</span>al man,<br/>
+                    Then we were Zi<span class="chord">C</span>ggy's band.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>I IV vi V</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Good Life" - OneRepublic</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: G&flat;</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">G&flat;</span>Woke up in London yesterday<span class="chord">B</span><br/>
+                    Found myself in the city near Piccadilly<span class="chord">E&flat;m</span><br/>
+                    Don't really know how I got here<br/>
+                    <span class="chord">D&flat;</span>I got some pictures on my phone<span class="chord">G&flat;</span><br/>
+                    New names and numbers that I don't know<span class="chord">B</span><br/>
+                    Address to places like Abbey Road<span class="chord">E&flat;m</span><br/>
+                    Day turns to night, night turns to wha<span class="chord">D&flat;</span>tever we want<br/>
+                    We're young enough to say
+                  </p>
+                </div>
+                <div class="list_item">"Skyscraper" - Demi Lovato</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: G</p>
+                  <p>
+                    [Verse]<br/>
+                    Skies are cry<span class="chord">G</span>ing, I am wa<span class="chord">C</span>tching<br/>
+                    Catching tea<span class="chord">Em</span>rdrops in my h<span class="chord">D</span>ands<br/>
+                    Only si<span class="chord">G</span>lence, as its en<span class="chord">C</span>ding, like we ne<span class="chord">Em</span>ver had a cha<span class="chord">D</span>nce<br/>
+                    Do you ha<span class="chord">Em</span>ve to make me fe<span class="chord">C</span>el like there's no<span class="chord">G</span>thing left of m<span class="chord">D</span>e?<br/>
+                    [Chorus]<br/>
+                    You can take e<span class="chord">G</span>verything I ha<span class="chord">C</span>ve<br/>
+                    You can break e<span class="chord">Em</span>verything I a<span class="chord">D</span>m<br/>
+                    Like I'm made of gla<span class="chord">G</span>ss  <span class="chord">C</span><br/>
+                    Like I'm made of pa<span class="chord">Em</span>per  <span class="chord">D</span><br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"No Sleep" - Wiz Khalifa</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: A</p>
+                  <p>
+                    [Chorus]<br/>
+                    <span class="chord">A</span>No drivin', <span class="chord">D</span>no sleepin'<br/>
+                    <span class="chord">F&sharp;</span>live it up like it<span class="chord">E</span>'s the weekend<br/>
+                    <span class="chord">A</span>when the dj <span class="chord">D</span>play the right song<br/>
+                    <span class="chord">F&sharp;</span>gonna drink, gonna pa<span class="chord">E</span>rty all night long<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"When We Die" - Bowling For Soup</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: D</p>
+                  <p>
+                    [Verse]<br/>
+                    Well, I<span class="chord">D</span> know that it's early<br/>
+                    And it's to<span class="chord">A</span>o hard to think.<br/>
+                    And the bro<span class="chord">Bm</span>ken empty bottles<br/>
+                    Are remi<span class="chord">G</span>nder in the sink.<br/>
+                    [...]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="minori" lang="en">
+            <h2>Progressioni minori</h2>
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>i VI III VII</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Grenade" - Bruno Mars</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Dm</p>
+                  <p>
+                    [Chorus]<br/>
+                    I'd catch a grena<span class="chord">Dm</span>de for ya y<span class="chord">B&flat;</span>eah, y<span class="chord">F</span>eah<br/>
+                    Throw my ha<span class="chord">C</span>nd on a bl<span class="chord">Dm</span>ade for ya ye<span class="chord">B&flat;</span>ah, y<span class="chord">F</span>eah<br/>
+                    I'd jump in fr<span class="chord">C</span>ont of a tra<span class="chord">Dm</span>in for ya y<span class="chord">B&flat;</span>eah, y<span class="chord">F</span>eah<br/>
+                    You know I'd d<span class="chord">C</span>o anythi<span class="chord">Dm</span>ng for ya y<span class="chord">B&flat;</span>eah, y<span class="chord">F</span>eah<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Cheap Thrills" - Sia</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: F&sharp;</p>
+                  <p>
+                    [Verse]<br/>
+                    Come o<span class="chord">F&sharp;</span>n, come on, turn the ra<span class="chord">D</span>dio on<br/>
+                    It's F<span class="chord">A</span>riday night and I wo<span class="chord">E</span>n't be long<br/>
+                    Gotta d<span class="chord">F&sharp;</span>o my hair, I put my ma<span class="chord">D</span>ke-up on<br/>
+                    It's F<span class="chord">A</span>riday night and I wo<span class="chord">E</span>n't be long<br/>
+                    [Chorus]<br/>
+                    Baby I<span class="chord">F&sharp;</span> don't need do<span class="chord">D</span>llar bills to have fu<span class="chord">A</span>n tonight<br/>
+                    (I l<span class="chord">E</span>ove cheap thrills)<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"It's My Life" - Bon Jovi</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Cm</p>
+                  <p>
+                    [Chorus]<br/>
+                    It's my li<span class="chord">Cm</span>fe<br/>
+                    It's now<span class="chord">A&flat;</span> or never<span class="chord">E&flat;</span><br/>
+                    I ain't gonna li<span class="chord">B&flat;</span>ve forever<br/>
+                    <span class="chord">Cm</span>I just wanna li<span class="chord">A&flat;</span>ve while I'm ali<span class="chord">E&flat;</span>ve<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Stronger" - Kelly Clarkson</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Am</p>
+                  <p>
+                    [Chorus]<br/>
+                    What doesn't kill you makes you stro<span class="chord">Am</span>nger<br/>
+                    Stand a little ta<span class="chord">F</span>ller<br/>
+                    Doesn't mean I'm lo<span class="chord">C</span>nely when I'm alone<span class="chord">G</span><br/>
+                    What doesn't kill you makes a fi<span class="chord">Am</span>ghter<br/>
+                    Footsteps even li<span class="chord">F</span>ghter<br/>
+                    Doesn't mean I'm o<span class="chord">C</span>ver 'cause you're gone<span class="chord">G</span><br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Save Tonight" - Eagle Eye Cherry</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Am</p>
+                  <p>
+                    [Verse]<br/>
+                    Go on and cl<span class="chord">Am</span>ose <span class="chord">F</span>the cu<span class="chord">C</span>rtains<span class="chord">G</span>,<br/>
+                    'cause all we <span class="chord">Am</span>need <span class="chord">F</span>is ca<span class="chord">C</span>ndlel<span class="chord">G</span>ight<br/>
+                    You and <span class="chord">Am</span>me <span class="chord">F</span>and bo<span class="chord">C</span>ttle of wine<span class="chord">G</span><br/>
+                    Gonna hold <span class="chord">Am</span>you tonight<span class="chord">F</span> ah-<span class="chord">C</span>yeah<span class="chord">G</span><br/>
+                    [...]<br/>
+                    [Chorus]<br/>
+                    Save ton<span class="chord">Am</span>ight<span class="chord">F</span> and fi<span class="chord">C</span>ght the break of da<span class="chord">G</span>wn<br/>
+                    Come <span class="chord">Am</span>tomorrow,<span class="chord">F</span> tomo<span class="chord">C</span>rrow I'll be go<span class="chord">G</span>ne<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Africa" - Toto</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: F&sharp;m</p>
+                  <p>
+                    [Chorus]<br/>
+                    <span class="chord">F&sharp;m</span>Gonna take a lo<span class="chord">D</span>t to drag me a<span class="chord">A</span>way from yo<span class="chord">E</span>u<br/>
+                    <span class="chord">F&sharp;m</span>There's nothing that a hu<span class="chord">D</span>ndred men or mo<span class="chord">A</span>re could ever d<span class="chord">E</span>o<br/>
+                    <span class="chord">F&sharp;m</span>I bless the ra<span class="chord">D</span>ins down in A<span class="chord">A</span>frica<span class="chord">E</span><br/>
+                    <span class="chord">F&sharp;m</span>Gonna take some ti<span class="chord">D</span>me to do the thi<span class="chord">A</span>ngs we never <span class="chord">C&sharp;m</span>ha---<span class="chord">E</span>-d<span class="chord">F&sharp;m</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>i III VII iv</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"I See Fire" - Ed Sheeran</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: B&flat;m</p>
+                  <p>
+                    [Verse]<br/>
+                    If this is to <span class="chord">B&flat;m</span>end in fire,<span class="chord">D&flat;</span><br/>
+                    Then we shall a<span class="chord">A&flat;</span>ll burn toge<span class="chord">E&flat;m</span>ther,<br/>
+                    Watch the fla<span class="chord">B&flat;m</span>mes climb hi<span class="chord">D&flat;</span>gher,<br/>
+                    In<span class="chord">A&flat;</span>to the night.<span class="chord">E&flat;m</span><br/>
+                    Calling ou<span class="chord">B&flat;m</span>t fathe<span class="chord">D&flat;</span>r oh,<br/>
+                    Sta<span class="chord">A&flat;</span>nd by and we <span class="chord">E&flat;m</span>will,<br/>
+                    Watch the fla<span class="chord">B&flat;m</span>mes burn au<span class="chord">D&flat;</span>burn on,<br/>
+                    The mou<span class="chord">A&flat;</span>ntainside
+                  </p>
+                </div>
+                <div class="list_item">"Wonderwall" - Oasis</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: F&sharp;m</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">F&sharp;m</span>Today is go<span class="chord">A</span>nna be the day<br/>
+                    That the're go<span class="chord">E</span>nna throw it back to yo<span class="chord">Bm</span>u<br/>
+                    <span class="chord">F&sharp;m</span>By now you shou<span class="chord">A</span>ld've somehow<br/>
+                    Reali<span class="chord">E</span>sed what you gotta d<span class="chord">Bm</span>o<br/>
+                    <span class="chord">F&sharp;m</span>I don't believe that a<span class="chord">A</span>nybody<br/>
+                    Fe<span class="chord">E</span>els the way I d<span class="chord">Bm</span>o about you now<span class="chord">F&sharp;m</span><br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Boulevard of Broken Dreams" - Green Day</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Fm</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">Fm</span>I walk a lonely road, the o<span class="chord">A&flat;</span>nly one that I<span class="chord">E&flat;</span> have ever kno<span class="chord">B&flat;m</span>wn<br/>
+                    <span class="chord">Fm</span>Don't know where it goes, bu<span class="chord">A&flat;</span>t it's home to me<span class="chord">E&flat;</span> and I walk alo<span class="chord">B&flat;m</span>ne<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Too Good At Goodbyes" - Sam Smith</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: Dm</p>
+                  <p>
+                    [Refrain]<br/>
+                    Every time you hu<span class="chord">Dm</span>rt me, the less that I cry<span class="chord">F</span><br/>
+                    And every time you le<span class="chord">C</span>ave me, the quicker these tears dry<span class="chord">Gm</span><br/>
+                    And every time you wa<span class="chord">Dm</span>lk out, the less I love you<span class="chord">F</span><br/>
+                    Baby, we don't stand a cha<span class="chord">C</span>nce, it's sad but it's true<span class="chord">Gm</span><br/>
+                    [Chorus]<br/>
+                    I'm way too good at goodby<span class="chord">Dm</span>es (I'm way too good at goodb<span class="chord">F</span>yes)<br/>
+                    I'm way too good at goodby<span class="chord">C</span>es (I'm way too good at goodb<span class="chord">Gm</span>yes)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>i III VII VI</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Counting Stars" - One Republic</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: C&sharp;m</p>
+                  <p>
+                    [Chorus]<br/>
+                    La<span class="chord">C&sharp;m</span>tely, I've been, <span class="chord">E</span>I've been losing sleep<br/>
+                    <span class="chord">B</span>Dreaming about the things that we<span class="chord">A</span> could be<br/>
+                    But <span class="chord">C&sharp;m</span>baby, I've been, I've been <span class="chord">E</span>praying hard,<br/>
+                    <span class="chord">B</span>Said no more counting dollars<br/>
+                    <span class="chord">A</span>We'll be counting stars<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Wrecking Ball" - Miley Cyrus</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Dm</p>
+                  <p>
+                    [Verse]<br/>
+                    We cla<span class="chord">Dm</span>wed, we chained our hea<span class="chord">F</span>rts in vain<br/>
+                    We ju<span class="chord">C</span>mped never asking why<span class="chord">B&flat;</span><br/>
+                    We ki<span class="chord">Dm</span>ssed, I fell unde<span class="chord">F</span>r your spell<br/>
+                    A lo<span class="chord">C</span>ve no one could deny<span class="chord">B&flat;</span><br/>
+                  </p>
+                </div>
+                <div class="list_item">"Hello" - Adele</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: Fm</p>
+                  <p>
+                    [Verse]<br/>
+                    He<span class="chord">Fm</span>llo, --<span class="chord">A&flat;</span>-it's m<span class="chord">E&flat;</span>e---<span class="chord">D&flat;</span><br/>
+                    I was wo<span class="chord">Fm</span>ndering if a<span class="chord">A&flat;</span>fter all these ye<span class="chord">E&flat;</span>ars you'd like to meet<span class="chord">D&flat;</span>,<br/>
+                    To go o<span class="chord">Fm</span>ver everything<span class="chord">A&flat;</span>,<br/>
+                    They say that ti<span class="chord">E&flat;</span>me's supposed to heal you, but I ain't do<span class="chord">D&flat;</span>ne much healing.<br/>
+                    [...]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="esempiBox">
+              <div class="topBox">
+                <h3>i VII VI VII</h3>
+              </div>
+              <div class="esempi">
+                <div class="list_item">"Beat It" - Micheal Jackson</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: E&flat;m</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">E&flat;m</span>They told him don't you ever co<span class="chord">D&flat;</span>me around here<br/>
+                    <span class="chord">E&flat;m</span>don't wanna see your face, you'd better di<span class="chord">D&flat;</span>sappear.<br/>
+                    The fi<span class="chord">B</span>re's in their eyes and their wo<span class="chord">D&flat;</span>rds are really clear,<br/>
+                    so be<span class="chord">E&flat;m</span>at it, just be<span class="chord">D&flat;</span>at it.<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"Rolling In The Deep" - Adele</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Cm</p>
+                  <p>
+                    [Verse]<br/>
+                    Th<span class="chord">Cm</span>ere's a fire sta<span class="chord">B&flat;</span>rting in my heart,<br/>
+                    Re<span class="chord">A&flat;</span>aching a fever pitch, and it's bri<span class="chord">B&flat;</span>nging me out the dark.<br/>
+                    Fi<span class="chord">Cm</span>nally I can see<span class="chord">B&flat;</span> you crystal clear<br/>
+                    Go<span class="chord">A&flat;</span> ahed and sell me out, and <span class="chord">B&flat;</span>I'll lay your shit bare
+                  </p>
+                </div>
+                <div class="list_item">"There Is A Light That Never Goes Out" - The Smiths</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: C&sharp;m</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">C&sharp;m</span>Take me o<span class="chord">B</span>ut to<span class="chord">C&sharp;m</span>night<span class="chord">B</span>--<span class="chord">A</span>--<span class="chord">B</span><br/>
+                    <span class="chord">C&sharp;m</span>Where there's <span class="chord">B</span>music<span class="chord">C&sharp;m</span> and <span class="chord">B</span>there's people<span class="chord">A</span> who are young and alive<span class="chord">B</span><br/>
+                    <span class="chord">C&sharp;m</span>Driving <span class="chord">B</span>in your ca<span class="chord">C&sharp;m</span>r I ne<span class="chord">B</span>ver never wa<span class="chord">A</span>nt to go home<span class="chord">B</span><br/>
+                    <span class="chord">C&sharp;m</span>Because <span class="chord">B</span>I haven't go<span class="chord">C&sharp;m</span>t one<span class="chord">B</span> anymore<span class="chord">A</span>---<span class="chord">B</span><br/>
+                  </p>
+                </div>
+                <div class="list_item">"New Rules" - Dua Lipa</div>
+                <div class="song-chords">
+                  <p class="key">Tonalità: Am</p>
+                  <p>
+                    [Verse]<br/>
+                    <span class="chord">Am</span>Talkin' in my sleep at night<br/>
+                    Makin' myself crazy<span class="chord">G</span><br/>
+                    <span class="chord">F</span>(Out of my mind, <span class="chord">G</span>out of my mind)<br/>
+                    <span class="chord">Am</span>Wrote it down and read it out<br/>
+                    Hopin' it would save me<span class="chord">G</span><br/>
+                    <span class="chord">F</span>(Too many times, <span class="chord">G</span>too many times)<br/>
+                    [...]
+                  </p>
+                </div>
+                <div class="list_item">"S&M" - Rihanna</div>
+                <div class="song-chords last">
+                  <p class="key">Tonalità: E&flat;m</p>
+                  <p>
+                    [Verse]<br/>
+                    'Cause <span class="chord">E&flat;m</span>I may be bad<span class="chord">D&flat;</span>, but I'm pe<span class="chord">B</span>rfectly go<span class="chord">D&flat;</span>od at it<br/>
+                    Se<span class="chord">E&flat;m</span>x in the air<span class="chord">D&flat;</span>, I don't ca<span class="chord">B</span>re, I love the sme<span class="chord">D&flat;</span>ll of it<br/>
+                    Sti<span class="chord">E&flat;m</span>cks and sto<span class="chord">D&flat;</span>nes may bre<span class="chord">B</span>ak my bones<span class="chord">D&flat;</span><br/>
+                    But <span class="chord">E&flat;m</span>chains and wh<span class="chord">D&flat;</span>ips <span class="chord">B</span>excite me<span class="chord">D&flat;</span><br/>
+                    [...]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+    <!-- FOOTER MOBILE FIRST -->
+    <footer>
+      <p>Progetto di Progettazione e Programmazione Web a.a. 2021-22 <br /> CdL in <a rel=link href="https://infouma.fileli.unipi.it/">Informatica Umanistica - Università di Pisa</a><br />
+      Realizzato da <a rel="author" href="info.html">Matilde Contestabile</a></p>
+      <div class="social">
+          <a href="mailto:cmatilde01@gmail.com"><img src="sources/icons/email.svg" alt="Icona Email"></a>
+          <a href="https://www.linkedin.com/in/matildecontestabile"><img class="linkedin" src="sources/icons/linkedin.svg" alt="Icona Linkedin"></a>
+          <a href="https://www.instagram.com/matildeec.music/"><img src="sources/icons/instagram.svg" alt="Icona Instagram"></a>
+      </div>
+      <p>Per maggiori informazioni visita <a href="info.html">Info</a></p>
+    </footer>
+  </body>
+</html>
